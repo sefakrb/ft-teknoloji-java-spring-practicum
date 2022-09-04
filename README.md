@@ -25,22 +25,22 @@ The REST API to the example app is described below.
 ### Request
 
 `POST /add-product/`
-`productName: String, expireDate: String(yyyy-mm-dd), telephoneNumber:integer`
+`productName: String, expireDate: String(yyyy-MM-dd), telephoneNumber:integer`
 
     {
       "productName":"",
-      "expireDate":"yyyy-mm-dd",
+      "expireDate":"yyyy-MM-dd",
       "price":
     }
     
 ### Request
 
 `POST /add-comment/`
-`productComment: String, commentDate: String(yyyy-mm-dd), productId:integer, userId:integer`
+`productComment: String, commentDate: String(yyyy-MM-dd), productId:integer, userId:integer`
 
     {
       "productComment":"",
-      "commentDate":"yyyy-mm-dd",
+      "commentDate":"yyyy-MM-dd",
       "productId":,
       "userId":
     }
@@ -72,7 +72,7 @@ The REST API to the example app is described below.
     [
         {
             "productName": "",
-            "expireDate": "yyyy-mm-dd",
+            "expireDate": "yyyy-MM-dd",
             "price": 
         }
     ]
@@ -86,7 +86,7 @@ The REST API to the example app is described below.
     [
         {
             "productComment": "",
-            "commentDate": "yyyy-mm-dd",
+            "commentDate": "yyyy-MM-dd",
             "productId": ,
             "userId": 
         }
@@ -96,14 +96,14 @@ The REST API to the example app is described below.
 ### Request
 
 `GET /comment-by-date?productId=&startDate=&endDate=`
-`productId: integer, startDate: yyyy-mm-dd`
+`productId: integer, startDate: yyyy-MM-dd`
 
 ### Response
 
     [
         {
             "productComment": "",
-            "commentDate": "yyyy-mm-dd",
+            "commentDate": "yyyy-MM-dd",
             "productId": ,
             "userId": 
         }
@@ -119,7 +119,7 @@ The REST API to the example app is described below.
     [
         {
             "productComment": "",
-            "commentDate": "yyyy-mm-dd",
+            "commentDate": "yyyy-MM-dd",
             "productId": ,
             "userId": 
         }
@@ -129,14 +129,14 @@ The REST API to the example app is described below.
 ### Request
 
 `GET /user-comment-by-date?userId=&startDate=&endDate=`
-`userId: integer, startDate: yyyy-mm-dd, endDate: yyyy-mm-dd`
+`userId: integer, startDate: yyyy-MM-dd, endDate: yyyy-MM-dd`
 
 ### Response
 
     [
         {
             "productComment": "",
-            "commentDate": "yyyy-mm-dd",
+            "commentDate": "yyyy-MM-dd",
             "productId": ,
             "userId": 
         }
@@ -152,7 +152,7 @@ The REST API to the example app is described below.
     [
         {
             "productComment": "",
-            "commentDate": "yyyy-mm-dd",
+            "commentDate": "yyyy-MM-dd",
             "productId": ,
             "userId": 
         }
@@ -168,7 +168,7 @@ The REST API to the example app is described below.
     [
         {
             "productComment": "",
-            "commentDate": "yyyy-mm-dd",
+            "commentDate": "yyyy-MM-dd",
             "productId": ,
             "userId": 
         }
