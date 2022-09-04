@@ -16,7 +16,7 @@ import com.ftteknolojijavaspringpracticum.jpa.model.Product;
 import com.ftteknolojijavaspringpracticum.service.ProductService;
 
 @Controller
-@RequestMapping(path = "/demo")
+@RequestMapping
 public class ProductController {
 
     @Autowired

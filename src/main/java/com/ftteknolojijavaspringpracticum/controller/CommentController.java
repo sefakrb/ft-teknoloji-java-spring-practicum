@@ -25,7 +25,7 @@ import com.ftteknolojijavaspringpracticum.jpa.repository.UserRepository;
 import com.ftteknolojijavaspringpracticum.service.CommentService;
 
 @Controller
-@RequestMapping(path = "/demo")
+@RequestMapping
 public class CommentController {
     @Autowired
     private CommentService commentService;
@@ -76,7 +76,7 @@ public class CommentController {
             @RequestParam String endDate) throws ParseException {
         Date start = new SimpleDateFormat("yyyy-MM-dd").parse(startDate);
         Date end = new SimpleDateFormat("yyyy-MM-dd").parse(endDate);
-        List<Comment> comments = commentService.getUserCommentsByDate(productId, start, end);
+        List<Comment> comments = commentService.getCommentsByDate(productId, start, end);
         return comments.stream()
                 .map(this::convertToDto)
                 .collect(Collectors.toList());

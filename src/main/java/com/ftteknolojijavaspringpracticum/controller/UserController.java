@@ -16,7 +16,7 @@ import com.ftteknolojijavaspringpracticum.jpa.model.User;
 import com.ftteknolojijavaspringpracticum.service.UserService;
 
 @Controller
-@RequestMapping(path = "/demo")
+@RequestMapping
 public class UserController {
     @Autowired
     private UserService userService;
